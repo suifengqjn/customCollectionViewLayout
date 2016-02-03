@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TBCycleCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tx1-5U-THC">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tx1-5U-THC" secondAttribute="bottom" id="Z1P-wZ-gRs"/>
+                <constraint firstAttribute="trailing" secondItem="tx1-5U-THC" secondAttribute="trailing" id="eRV-j0-Nwi"/>
+                <constraint firstItem="tx1-5U-THC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lVy-ge-W7Y"/>
+                <constraint firstItem="tx1-5U-THC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="z75-V0-knN"/>
+            </constraints>
+            <connections>
+                <outlet property="imageIVew" destination="tx1-5U-THC" id="bSa-7Z-583"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
